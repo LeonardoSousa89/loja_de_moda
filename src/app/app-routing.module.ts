@@ -11,7 +11,7 @@ const routes: Routes = [
   { path:"",        component: StoreComponent, pathMatch: "full" },
   { path:"admin",   component: AdminComponent },
   { path: "error",  component: ErrorComponent },
-  { path: "**",  component: ErrorComponent }
+  { path: "**",     component: ErrorComponent }
 
 ];
 
