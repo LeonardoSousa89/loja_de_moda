@@ -1,0 +1,14 @@
+npm i -g @angular/cli
+
+ng n tendencia --routing --defaults --style=scss
+
+ng s
+
+ng g m core/admin --routing
+ng g c core/admin/pages/admin
+
+ng g m components/store --routing
+ng g c components/store/pages/store
+
+ng g m components/error --routing
+ng g c components/error/pages/error
