@@ -1,15 +1,13 @@
-import { AdminComponent } from '../../core/admin/pages/admin/admin.component';
+import { ErrorComponent } from './error/error.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-
-  { path: '', component: AdminComponent }
-
+  { path: '', component: ErrorComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AdminRoutingModule { }
+export class ErrorRoutingModule { }

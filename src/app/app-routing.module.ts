@@ -6,16 +6,16 @@ const routes: Routes = [
 
   {
     path: '',
-    loadChildren: ()=>import('./components/store/store.module').then(module=>module.StoreModule)
+    loadChildren: ()=>import('./pages/pages.module').then(module=>module.PagesModule)
   },{
     path:'admin',
-    loadChildren: ()=>import('./core/admin/admin.module').then(module=>module.AdminModule)
+    loadChildren: ()=>import('./pages/core/core.module').then(module=>module.CoreModule)
   },{
     path: 'error',
-    loadChildren: ()=>import('./components/error/error.module').then(module=>module.ErrorModule)
+    loadChildren: ()=>import('./pages/error/error.module').then(module=>module.ErrorModule)
   },{
-    path:'**',
-    loadChildren: ()=>import('./components/error/error.module').then(module=>module.ErrorModule)
+    path: '**',
+    loadChildren: ()=>import('./pages/error/error.module').then(module=>module.ErrorModule)
   }
 
 ];
