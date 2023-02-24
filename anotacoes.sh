@@ -9,7 +9,7 @@
 
 # https://www.mustachestore.com.br/
 
-
+# OBSERVAÇÕES:
 # Criei módulos de erro e admin no interior do módulo
 # de pages, pois o caminho coringa [/**] intercepta qualquer 
 # rota que não sejam as rotas cadastradas no módulo onde, se há
