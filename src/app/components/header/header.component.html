@@ -6,8 +6,8 @@
 
     <div class="search-session">
         <span>
-            <input type="text" placeholder="busque por camisas, vestidos, boné...">
-            <button><img src="../../../assets/search.png" alt=""></button>
+            <input type="text" [(ngModel)]="peca" placeholder="busque por camisas, vestidos, boné...">
+            <button (click)="getItensBySearchPiece()"><img src="../../../assets/search.png" alt=""></button>
         </span>
     </div>
 

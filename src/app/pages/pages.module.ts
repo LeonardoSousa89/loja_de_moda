@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 
+import { FormsModule } from '@angular/forms';
+
 //components
 import { HeaderComponent } from './../components/header/header.component';
 import { FooterComponent } from './../components/footer/footer.component';
@@ -20,7 +22,8 @@ import { AdminComponent } from './admin/admin.component';
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    FormsModule
   ]
 })
 export class PagesModule { }
