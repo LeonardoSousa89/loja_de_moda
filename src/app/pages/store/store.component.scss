@@ -3,7 +3,7 @@
 .store{
     padding: 10px;
     
-    @include test(solid 1px pink);
+    // @include test(solid 1px pink);   
     @include dimension($full_width, $full_height);
     @include display( $grid,
     $none, 
@@ -18,7 +18,7 @@
     background: $dark_light;
 
     app-header{
-        @include test(solid 1px $--cor05);
+        // @include test(solid 1px $--cor05);
         grid-area:header;
     }
     main{

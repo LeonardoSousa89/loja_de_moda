@@ -5,7 +5,6 @@
     @include display($flex, row, space-evenly, $center, $none, $none, $none);
 
     .logo-session, .search-session, .contact-or-login-session{
-        // @include test(solid 1px red);
         @include dimension($hundred_percent, $hundred_percent);
     }
 
@@ -38,6 +37,7 @@
             input{
                 padding: 0.5vh;
                 font-size: $font_larger;
+                font-family: $font_miniver;
                 grid-area: input;
                 border: transparent;
                 outline: transparent;
