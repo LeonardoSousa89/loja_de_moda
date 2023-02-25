@@ -1,7 +1,14 @@
-@import './styles/indes.scss'
+@import './styles/indes.scss';
 
+:root{
+    overflow-x: $hidden;
 
+    *{
+        margin: 0;
+        font-family: $font_inter;
+    }
 
+}
 
 
 

@@ -1,0 +1,35 @@
+@import '../variables/variables.scss';
+
+@mixin test($border){
+    border: $border;
+}
+
+@mixin dimension($width, $height){
+    width: $width;
+    height: $height;
+}
+
+//As variáveis não utilizadas set como 0 ou none
+@mixin display( $display,
+                $flex_direction, 
+                $justify-content, 
+                $align_items,
+                $grid_template_columns,
+                $grid_template_rows,
+                $grid_template_areas) {
+    
+    @if $display == $flex {
+
+        display: $display;
+        flex-direction: $flex_direction;
+        justify-content: $justify-content;
+        align-items: $align_items;
+
+    }@if $display == $grid {
+
+        display: $display;
+        grid-template-columns: $grid_template_columns;
+        grid-template-rows: $grid_template_rows;
+        grid-template-areas: $grid_template_areas;
+    }
+}

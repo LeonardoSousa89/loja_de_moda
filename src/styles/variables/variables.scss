@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&display=swap');
+
+$font_miniver:'Miniver', cursive;
+$font_inter:'Inter', sans-serif;
+
+//paleta de cores 1
+$light:#fff;
+$ocean:#0367A6;
+$dark:#000000;
+$smoke:#D9D9D9;
+$dark_light:whitesmoke;
+
+//paleta de cores 1 [principal]
+$--cor01: #fcf5f8;
+$--cor02: #e194af;
+$--cor03: #e76d98;
+$--cor04: #fcd5e3;
+$--cor05: #803f7f;
+$--cor06: #e194af;
+$--cor07: #e85d8e;
+$--cor08: #e194af;
+$--cor09: #e76d98;
+
+$ten:10px;
+$hundred_pixel:100px;
+$hundred_percent:100%;
+$half_hundred_percent:50%;
+
+$grid:grid;
+$flex:flex;
+
+$small_width:60vw;
+$medium_width:80vw;
+$full_width:100vw;
+$small_height:60vh;
+$medium_height:80vh;
+$full_height:100vh;
+
+$hidden:hidden;
+
+$font_small:small;
+$font_medium:medium;
+$font_large:large;
+$font_larger:larger;
+
+$width_small:40px;
+$width_medium:60px;
+$width_large:100px;
+$width_larger:150px;
+$height_small:40px;
+$height_medium:60px;
+$height_large:100px;
+$height_larger:150px;
+
+$pointer:pointer;
+
+$none:none;
+
+$center:center;
+

@@ -9,12 +9,14 @@ import { FooterComponent } from './../components/footer/footer.component';
 
 //pages
 import { StoreComponent } from './store/store.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
     StoreComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AdminComponent
   ],
   imports: [
     CommonModule,

@@ -1,3 +1,4 @@
+import { AdminComponent } from './admin/admin.component';
 import { StoreComponent } from './store/store.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -5,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
 
   { path:'', component: StoreComponent },
+  { path:'admin', component: AdminComponent },
 
 ];
 

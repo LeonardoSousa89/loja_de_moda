@@ -1,0 +1,32 @@
+@import '../../../styles/indes.scss';
+
+.store{
+    padding: 10px;
+    
+    @include test(solid 1px pink);
+    @include dimension($full_width, $full_height);
+    @include display( $grid,
+    $none, 
+    $none, 
+    $none,
+    1fr,
+    20% 60% 20%,
+    'header header'
+    'main main'
+    'footer footer');
+
+    background: $dark_light;
+
+    app-header{
+        @include test(solid 1px $--cor05);
+        grid-area:header;
+    }
+    main{
+        @include test(solid 1px $--cor06);
+        grid-area:main;
+    }
+    app-footer{
+        @include test(solid 1px $--cor07);
+        grid-area:footer;
+    }
+}

@@ -7,8 +7,11 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: ()=>import('./pages/pages.module').then(module=>module.PagesModule)
+  }, {
+    path: 'admin',
+    loadChildren: ()=>import('./pages/pages.module').then(module=>module.PagesModule)
   },{
-    path:'admin',
+    path:'login',
     loadChildren: ()=>import('./pages/core/core.module').then(module=>module.CoreModule)
   },{
     path: 'error',

@@ -1,9 +1,9 @@
-import { AdminComponent } from './admin/admin.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: AdminComponent }
+  { path: '', component: SignInComponent }
 ];
 
 @NgModule({

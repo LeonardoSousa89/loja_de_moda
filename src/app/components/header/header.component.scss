@@ -1,0 +1,67 @@
+@import '../../../styles.scss';
+
+.header{
+    @include dimension($hundred_percent, $hundred_percent);
+    @include display($flex, row, space-evenly, $center, $none, $none, $none);
+
+    .logo-session, .search-session, .contact-or-login-session{
+        @include test(solid 1px red);
+        @include dimension($hundred_percent, $hundred_percent);
+    }
+
+    .logo-session{
+        @include display($flex, row, $center, $center, $none, $none, $none);
+        img{ 
+            @include dimension(calc($hundred_pixel * 3), calc($hundred_pixel * 1));
+        }
+    }
+
+    .search-session{
+        @include display($flex, row, $center, $center, $none, $none, $none);
+
+        span{
+
+            @include display( $grid,
+            $none, 
+            $none, 
+            $none,
+            1fr,
+            80% 20%,
+            'input button');
+
+            border: solid 2px rgba($color: $--cor07, $alpha: 0.8);
+            border-top-right-radius: calc($ten * 0.5);
+            border-bottom-right-radius: calc($ten * 0.5);
+
+            width: $hundred_percent;
+            
+            input{
+                padding: 1vh;
+                font-size: $font_larger;
+                grid-area: input;
+                border: transparent;
+                outline: transparent;
+            }
+
+            button{
+                grid-area: button;
+                border-top-right-radius: calc($ten * 0.3);
+                border-bottom-right-radius: calc($ten * 0.3);
+                background: rgba($color: $--cor07, $alpha: 0.8);
+                padding: $ten;
+                border: transparent;
+                cursor: $pointer;
+                @include dimension(calc($hundred_pixel * 0.7), calc($hundred_pixel * 0.4));
+    
+                img{
+                    @include dimension(calc($hundred_pixel * 0.2), calc($hundred_pixel * 0.2));
+                }
+            }
+
+        }
+    }
+
+    .contact-or-login-session{
+        @include display($flex, row, space-evenly, $center, $none, $none, $none);
+    }
+}
