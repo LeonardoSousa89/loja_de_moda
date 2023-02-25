@@ -5,7 +5,7 @@
     @include display($flex, row, space-evenly, $center, $none, $none, $none);
 
     .logo-session, .search-session, .contact-or-login-session{
-        @include test(solid 1px red);
+        // @include test(solid 1px red);
         @include dimension($hundred_percent, $hundred_percent);
     }
 
@@ -34,13 +34,14 @@
             border-bottom-right-radius: calc($ten * 0.5);
 
             width: $hundred_percent;
-            
+
             input{
-                padding: 1vh;
+                padding: 0.5vh;
                 font-size: $font_larger;
                 grid-area: input;
                 border: transparent;
                 outline: transparent;
+                height:  $hundred_percent;;
             }
 
             button{
@@ -63,5 +64,36 @@
 
     .contact-or-login-session{
         @include display($flex, row, space-evenly, $center, $none, $none, $none);
+        
+        .zap{
+            display: $flex;
+
+            img{
+                @include dimension(calc($hundred_pixel * 0.2), calc($hundred_pixel * 0.2));
+                margin-right: 10px;
+                cursor: $pointer;
+            }
+            p{
+                color: rgba($color: #000000, $alpha: 0.8);
+                cursor: $pointer;
+            }
+
+        }
+
+        .entrar{
+            display: $flex;
+
+            img{
+                @include dimension(calc($hundred_pixel * 0.2), calc($hundred_pixel * 0.2));
+                margin-right: 10px;
+            }
+
+            button{
+                cursor: $pointer;
+                border: transparent;
+                outline: transparent;
+            }
+        }
+
     }
 }
