@@ -15,6 +15,9 @@ export class FooterComponent implements OnInit{
 
   private window_document: Window=window
 
+  public mensagem_titulo: string='Receba ofertas exclusivas'
+  public mensagem_contexto: string='Assine nossa newsletter e seja V.I.P.'
+
   ngOnInit(): void {}
 
   public targetLink(link: string): void{ this.window_document.open(link) }

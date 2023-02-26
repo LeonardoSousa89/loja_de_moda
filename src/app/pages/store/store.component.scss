@@ -1,9 +1,7 @@
 @import '../../../styles/indes.scss';
 
 .store{
-    padding: 10px;
     
-    // @include test(solid 1px pink);   
     @include dimension($full_width, calc($full_height * 2));
     @include display( $grid,
     $none, 
@@ -18,7 +16,6 @@
     background: $dark_light;
 
     app-header{
-        // @include test(solid 1px $--cor05);
         grid-area:header;
     }
 
@@ -61,7 +58,6 @@
     }
 
     app-footer{
-        @include test(solid 1px $--cor07);
         grid-area:footer;
     }
 }
