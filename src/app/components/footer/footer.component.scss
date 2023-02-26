@@ -39,6 +39,10 @@
                     font-size: calc($hundred_pixel * 0.3);
                     color: rgba($color: $--cor05, $alpha: 0.6);
                 }
+                .mensagem_contexto{
+                    color: rgba($color: #000, $alpha: 0.6);
+                    font-weight: bold;
+                }
             }
             .imagem{
 
