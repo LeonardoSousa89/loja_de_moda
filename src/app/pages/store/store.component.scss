@@ -4,13 +4,13 @@
     padding: 10px;
     
     // @include test(solid 1px pink);   
-    @include dimension($full_width, $full_height);
+    @include dimension($full_width, calc($full_height * 2));
     @include display( $grid,
     $none, 
     $none, 
     $none,
     1fr,
-    20% 60% 20%,
+    10% 80% 20%,
     'header header'
     'main main'
     'footer footer');
@@ -21,10 +21,45 @@
         // @include test(solid 1px $--cor05);
         grid-area:header;
     }
+
     main{
         @include test(solid 1px $--cor06);
         grid-area:main;
+
+        @include display( $grid,
+        $none, 
+        $none, 
+        $none,
+        20% 80%,
+        25%,
+        'banner banner'
+        'checbox_search moda_feminina'
+        'checbox_search moda_masculina'
+        'checbox_search moda_infantil' );        
+
+        .banner, .moda_feminina, 
+        .moda_masculina, .moda_infantil, 
+        .checbox_search{
+            @include test(solid 1px $--cor05);
+        }
+        .banner{
+            grid-area:banner;
+        }
+        .moda_feminina{
+            grid-area:moda_feminina;
+        }
+        .moda_masculina{
+            grid-area:moda_masculina;
+        }
+        .moda_infantil{
+            grid-area:moda_infantil;
+        }
+        .checbox_search{
+            grid-area:checbox_search;
+        }
+
     }
+
     app-footer{
         @include test(solid 1px $--cor07);
         grid-area:footer;

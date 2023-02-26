@@ -1,0 +1,67 @@
+@import '../../../styles.scss';
+
+.footer{
+    @include dimension($hundred_percent, $hundred_percent);
+    @include display( $grid,
+                $none, 
+                $none, 
+                $none,
+                1fr,
+                45% 45% 10%,
+                'form         form'
+                'contact    contact'
+                'copyright copyright');
+
+    .form{
+        @include test(1px solid goldenrod);
+
+        grid-area: form;
+        display: $flex; 
+
+        .logo{
+        //     // @include test(1px solid red);
+            width: 30%;
+            img{
+                @include dimension(100px, 100px);
+            }
+        }
+        .formulary{
+        //     // @include test(1px solid red);
+            width: 70%;
+        }
+    }
+
+    .contact{
+        grid-area: contact;
+
+        padding: 1vh;
+
+        display: $flex;
+        flex-direction: column;
+        align-items:$center;
+        
+        strong{
+            margin: 10px 0;
+        }
+
+        span{
+            width: 40%;
+            display: $flex;
+            justify-content: space-between;
+
+            .social{
+                @include dimension(calc($hundred_pixel * 0.6), calc($hundred_pixel * 0.6));
+                cursor:$pointer;
+            }
+        }
+    }
+
+    .copyright{
+        grid-area: copyright;
+        text-align: $center;
+        font-size: $font_small;
+        color: rgba($color: #000000, $alpha: 0.7);
+        margin: 5px 0;
+    }
+
+}
