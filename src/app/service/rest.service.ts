@@ -4,7 +4,6 @@ import { Injectable, EventEmitter } from '@angular/core';
 import { Observable } from 'rxjs'
 
 import { modelos } from '../models/type'
-import {  } from '../components/header/header.component'
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +15,19 @@ export class RestService {
   
   public emitEvent=new EventEmitter()
 
-  constructor(private http: HttpClient) { }
-  
+  constructor(private http: HttpClient) {}
+
+  public logOut(): void{
+    localStorage.removeItem('access_token')
+  }
+
+  public isAuthenticated(): boolean{
+    const token=localStorage.getItem('access_token')
+
+    if(!token) return false
+    return true
+  }
+
   public getAllItens(): Observable<Array<modelos>>{
 
     return this.http.get<Array<modelos>>(`${this.url}/loja/itens`).pipe(

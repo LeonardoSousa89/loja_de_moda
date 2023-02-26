@@ -1,5 +1,5 @@
 export type modelos={
-	id: number,
+	id?: number,
     preco: number,
 	peca: string,
 	categoria: string,

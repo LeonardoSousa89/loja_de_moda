@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { modelos } from 'src/app/models/type';
 import { RestService } from 'src/app/service/rest.service';
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
 export class HeaderComponent implements OnInit{
 
   private window_document: Window=window

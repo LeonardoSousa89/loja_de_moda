@@ -9,6 +9,14 @@
 
 # https://www.mustachestore.com.br/
 
+# Token jwt
+
+# https://www.javainuse.com/jwtgenerator
+# https://jwt.io/
+# https://www.npmjs.com/package/@auth0/angular-jwt
+
+
+
 # OBSERVAÇÕES:
 # Criei módulos de erro e core no interior do módulo
 # de pages, pois o caminho coringa [/**] intercepta qualquer 
@@ -19,10 +27,27 @@
 # através dos módulos carregados via lazy loading e cada módulo 
 # apontará para o caminho raíz [/] com o argumento { path:'' }
 
+
+
 # path:
 #     - pages.module
 #         - storeComponent
 #         - error.module
 #             - errorComponent
 #         - core.module
-#             - adminComponent
+#             - 
+
+
+
+# Token fake para testes:
+# eyJhbGciOiJIUzI1NiJ9.
+# eyJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6ImxvamEiLCJleHAiOjE2Nzc0Mjg2NjksImlhdCI6MTY3NzQyODY2OX0.
+# kq4lbf4oiVHZTlmxXiHd4BHChcTeRHwQiqftuAhRXgY
+
+#   copie e cole este script no console do browser 
+# [testes de proteção de rota via guard]
+
+#   function test(){
+#     const token_test='eyJhbGciOiJIUzI1NiJ9.eyJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6ImxvamEiLCJleHAiOjE2Nzc0Mjg2NjksImlhdCI6MTY3NzQyODY2OX0.kq4lbf4oiVHZTlmxXiHd4BHChcTeRHwQiqftuAhRXgY'
+#     localStorage.setItem('access_token', token_test)
+#   }
