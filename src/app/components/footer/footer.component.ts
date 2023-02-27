@@ -14,8 +14,8 @@ export class FooterComponent implements OnInit{
   public email_input: string=''
 
   private social={
-    facebook:'https://www.facebook.com/profile.php?id=100087040453902',
-    github: 'https://github.com/LeonardoSousa89',
+    facebook: 'https://www.facebook.com/profile.php?id=100087040453902',
+    github:   'https://github.com/LeonardoSousa89',
     linkedin: 'https://www.linkedin.com/in/leonardo-dos-santos-sousa-238651173'
   }
 

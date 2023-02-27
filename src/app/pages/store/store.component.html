@@ -2,7 +2,11 @@
     <app-header></app-header>
 
     <main>
-        <div class="banner">banner</div>
+        <div class="banner">
+            <div class="button-side" (click)="decPosition()"><</div>
+            <img [src]="banners[0]" alt="">
+            <div class="button-side" (click)="addposition()">></div>
+        </div>
         <div class="moda_feminina">moda feminina</div>
         <div class="moda_masculina">moda masculina</div>
         <div class="moda_infantil">moda infantil</div>

@@ -40,7 +40,42 @@
             @include test(solid 1px $--cor05);
         }
         .banner{
-            grid-area:banner;
+            grid-area: banner;
+            background: linear-gradient(63deg, rgba($color:  $--cor05, $alpha: 0.4) 45%, rgba($color:  $--cor05, $alpha: 0.8) 55%);
+
+            display: $flex;
+
+            justify-content: space-evenly;
+            align-items: $center;
+
+            img{
+                margin: 0 10px;
+                border: 5px solid $--cor01;
+                border-radius: 3px;
+                @include dimension(calc($hundred_percent * 0.6), calc($hundred_percent * 0.97));
+            }
+
+           .button-side{
+                display: $none;
+            }
+
+            &:hover{
+
+                .button-side{
+                    display: flex;
+                    font-size: calc($hundred_pixel * 0.4);
+                    font-weight: bold;
+                    color: rgba($color: #000000, $alpha: 0.4);
+                    cursor: $pointer;
+
+                    transition: all;
+                    transition-duration: 0.5s;
+
+                    &:hover{
+                        color: rgba($color: #000000, $alpha: 0.6);
+                    }
+                }
+           }
         }
         .moda_feminina{
             grid-area:moda_feminina;
