@@ -9,6 +9,7 @@ import { Component, OnInit, Input, Output } from '@angular/core';
 })
 export class FooterComponent implements OnInit{
   
+  //Falta aplicar regex nos campos para impedir ataque xss e validar o email
   public nome_input:  string=''
   public email_input: string=''
 
