@@ -8,3 +8,9 @@ export type modelos={
 	cor: string,
 	image_url: string
 }
+
+export type cliente={
+	id?: number,
+    nome: string,
+	email: string,
+}

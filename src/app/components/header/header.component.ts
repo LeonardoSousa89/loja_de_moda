@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { modelos } from 'src/app/models/type';
 import { RestService } from 'src/app/service/rest.service';
 @Component({

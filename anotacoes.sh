@@ -1,20 +1,20 @@
 # pesquisa:
-
 # https://www.google.com/search?q=design+de+site+lojas+de+moda&sxsrf=AJOqlzV3DbB71I03mMbqG81d7e7htHAMog%3A1677269647651&ei=jxr5Y463J_Sz5OUPzPanaA&ved=0ahUKEwjOuqms_K79AhX0GbkGHUz7CQ0Q4dUDCA8&uact=5&oq=design+de+site+lojas+de+moda&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICCEQoAEQwwQ6CggAEEcQ1gQQsAM6BwgjELACECdKBAhBGABQ9RhY-R1gryFoAXABeACAAa0BiAGeBpIBAzAuNZgBAKABAcgBCMABAQ&sclient=gws-wiz-serp
 # https://br.pinterest.com/pin/477240891746517090/
 
-
-
 # modelo para criação do site:
-
 # https://www.mustachestore.com.br/
 
-# Token jwt
-
+# Token jwt:
 # https://www.javainuse.com/jwtgenerator
 # https://jwt.io/
 # https://www.npmjs.com/package/@auth0/angular-jwt
 
+# manipulação da DOM:
+# https://medium.com/@philippenunes/angular-manipulando-o-dom-com-responsabilidade-2e5da54c4818
+
+# ataque xss:
+# https://www.kaspersky.com.br/resource-center/definitions/what-is-a-cross-site-scripting-attack
 
 
 # OBSERVAÇÕES:

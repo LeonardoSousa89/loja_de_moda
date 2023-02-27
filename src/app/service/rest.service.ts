@@ -1,9 +1,9 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, EventEmitter } from '@angular/core';
+import { Injectable, EventEmitter, Input } from '@angular/core';
 
 import { Observable } from 'rxjs'
 
-import { modelos } from '../models/type'
+import { modelos, cliente } from '../models/type'
 
 @Injectable({
   providedIn: 'root'
@@ -45,5 +45,14 @@ export class RestService {
                 error=>error
               )
 
+  }
+
+  public saveClientData(nome: string, email: string): Observable<cliente>{
+
+    return this.http
+               .post<cliente>(`${this.url}/loja/salvar-dados-do-cliente`, {nome, email})
+               .pipe(response=>response,
+                error=>error
+               )
   }
 }
